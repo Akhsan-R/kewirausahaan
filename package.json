@@ -1,0 +1,13 @@
+{
+  "name": "academic-hub-b24",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {"dev":"next dev","build":"next build","start":"next start"},
+  "dependencies": {
+    "next":"15.5.4",
+    "react":"19.1.1",
+    "react-dom":"19.1.1",
+    "@supabase/supabase-js":"2.116.0",
+    "@supabase/ssr":"0.12.7"
+  }
+}
