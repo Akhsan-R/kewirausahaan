@@ -1,0 +1,19 @@
+.product-promo {
+  margin: 2px 0 8px;
+  color: #a65e67;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.add-button.unavailable,
+.add-button:disabled {
+  border-color: #e8e0dc;
+  background: #f5f1ee;
+  color: #8f8580;
+  cursor: not-allowed;
+}
+.primary-button:disabled {
+  border-color: #c7b9b3;
+  background: #c7b9b3;
+  cursor: not-allowed;
+}
