@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Browse the updated Queenshop product catalogue",
+    "sanity": true,
+    "viewport": "desktop",
+    "covers": [
+      "updated product catalogue",
+      "product category filtering",
+      "product detail variants",
+      "alternative product photos",
+      "prices from supplied product posters"
+    ],
+    "description": "Verifies the product catalogue displays the added clothing types, prices, and selectable motifs.",
+    "steps": [
+      "Open the Queenshop home page",
+      "Select the Daster category and verify the Daster Harian Motif price is Rp35.000",
+      "Select the Gamis category",
+      "Open Gamis Wanita Motif",
+      "Review the size and motif options"
+    ],
+    "expected": "The catalogue displays the added Daster, Kulot, Gamis, Setelan, and Atasan products with the supplied prices and variant choices."
+  },
+  {
+    "name": "Apply the three-piece kulot promotion",
+    "viewport": "desktop",
+    "covers": [
+      "bundle price calculation",
+      "cart quantity update",
+      "promotion disclosure"
+    ],
+    "description": "Verifies three kulot pieces receive the Rp100.000 package price.",
+    "steps": [
+      "Open Celana Kulot Motif and add it to the cart",
+      "Increase quantity to 3",
+      "Verify the line subtotal and cart subtotal"
+    ],
+    "expected": "The kulot subtotal is Rp100.000 for 3 pieces and the cart indicates that the package promotion is active."
+  },
+  {
+    "name": "Prevent checkout for the setelan without a listed price",
+    "viewport": "desktop",
+    "covers": [
+      "missing-price guardrail",
+      "disabled purchase action",
+      "no unpriced item in cart"
+    ],
+    "description": "Verifies a product whose price is absent from the supplied poster cannot be added to the cart.",
+    "steps": [
+      "Select the Setelan category",
+      "Open Setelan Pendek Motif",
+      "Review its price status and purchase control"
+    ],
+    "expected": "The setelan shows Harga belum tersedia and its purchase button is disabled."
+  },
+  {
+    "name": "Complete checkout with the updated product prices",
+    "viewport": "desktop",
+    "covers": [
+      "checkout form validation",
+      "payment method selection",
+      "updated order total",
+      "simulated order confirmation"
+    ],
+    "description": "Verifies the updated catalog pricing carries through checkout and the payment simulation disclosure remains visible.",
+    "steps": [
+      "Add Daster Harian Motif to the cart",
+      "Open checkout",
+      "Enter a valid recipient name, phone, address, city, and postal code",
+      "Continue to payment",
+      "Select QRIS and place the order",
+      "Review the order confirmation"
+    ],
+    "expected": "The order confirmation displays the updated price total and states that the payment is simulated."
+  },
+  {
+    "name": "Use search and cart on a mobile screen",
+    "viewport": "mobile",
+    "covers": [
+      "mobile responsive layout",
+      "catalogue search",
+      "mobile cart access"
+    ],
+    "description": "Verifies that the new product catalogue remains searchable and usable on a mobile viewport.",
+    "steps": [
+      "Open the home page at mobile viewport width",
+      "Search for Kulot",
+      "Add Celana Kulot Motif",
+      "Open the cart and increase quantity"
+    ],
+    "expected": "Search results, add-to-cart, and quantity controls remain usable on the mobile layout."
+  }
+]
